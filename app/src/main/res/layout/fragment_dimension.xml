@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dimension.DimensionFragment">
+
+    <TextView
+        android:id="@+id/text_dimension"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dimensionToleranceTextView" />
+
+    <TextView
+        android:id="@+id/DCTGTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:padding="@dimen/standard_padding"
+        android:text="@string/DCTG"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dimensionTextView" />
+
+    <TextView
+        android:id="@+id/nominalDimensionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DCTGTextView"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10sp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="@dimen/standard_padding"
+        android:text="@string/nominalSize"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dimensionAllowanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nominalDimensionTextView"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="@dimen/standard_padding"
+        android:text="@string/sizeTolerance"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GOSTspinner" />
+
+    <Spinner
+        android:id="@+id/GOSTspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10sp"
+        android:layout_toEndOf="@id/DCTGTextView"
+        android:dropDownWidth="wrap_content"
+        android:entries="@array/DCTG_GOST"
+        android:gravity="center"
+        android:padding="@dimen/standard_padding"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DCTGTextView" />
+
+    <EditText
+        android:id="@+id/dimensionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/GOSTspinner"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/standard_padding"
+        android:layout_toEndOf="@id/nominalDimensionTextView"
+        android:gravity="center"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLines="1"
+        android:minWidth="80dp"
+        android:padding="10sp"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nominalDimensionTextView"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/dimensionToleranceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dimensionTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10sp"
+        android:layout_toEndOf="@id/dimensionAllowanceTextView"
+        android:gravity="center"
+        android:minWidth="80dp"
+        android:padding="@dimen/standard_padding"
+        android:text="@string/outputText"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dimensionAllowanceTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

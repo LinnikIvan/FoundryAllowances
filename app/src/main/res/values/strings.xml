@@ -1,0 +1,43 @@
+<resources>
+    <!-- Titles -->
+    <string name="nav_header_title">Допуски отливок</string>
+    <string name="nav_header_subtitle">Подзаголовок</string>
+
+    <!-- Preference Titles -->
+    <string name="app_name">Допуски отливок</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- strings -->
+    <string name="DCTG">Класс точности:</string>
+    <string name="outputText">±</string>
+    <string name="hint">0</string>
+
+    <string name="nominalSize">Размер, мм:</string>
+    <string name="sizeTolerance">Допуск, мм:</string>
+
+    <string name="nominalMass">Масса, кг:</string>
+    <string name="massTolerance">Допуск, кг:</string>
+
+    <string name="menu_home">Допуски размеров</string>
+    <string name="menu_gallery">Допуски масс</string>
+    <string name="menu_slideshow">О программе</string>
+    <string name="menu_settings">Настройки</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Пользователь</string>
+    <string name="sync_header">Графический пользовательский интерфейс</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Имя пользователя</string>
+    <string name="reply_title">Отображать допуск</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Выбрать тему вручную</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="koroblenie">Коробление (в разработке)</string>
+</resources>
