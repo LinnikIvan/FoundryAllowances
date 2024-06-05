@@ -11,6 +11,7 @@
         android:theme="@style/Theme.FoundryAllowances">
         <activity
             android:name=".NavigationActivity"
+            android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.FoundryAllowances.NoActionBar">
             <intent-filter>
